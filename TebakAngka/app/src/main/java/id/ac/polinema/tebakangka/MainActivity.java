@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
 	// TODO: generate angka random di sini
 	private void initRandomNumber() {
 		Random r = new Random();
-		random = r.nextInt(100 + 1);
+		random = r.nextInt(100) + 1;
 		return;
 
 	}
@@ -50,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
 
 	public void handleReset(View view) {
 		// TODO: Reset tampilan
+        initRandomNumber();
 		angka_input.setText("");
 		tebak_button.setEnabled(true);
 	}
